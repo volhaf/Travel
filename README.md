@@ -1,2 +1,7 @@
 # Travel
-HTML, CSS and JS landing page for travel agency (RSS) 
+This page is created with:
+
+HTML5
+CSS3
+JS
+Deployment link
