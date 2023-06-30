@@ -1,0 +1,7 @@
+
+.header {
+    background-color: bisque;
+}
+.header__logo-mobile {
+    display: none;
+}
