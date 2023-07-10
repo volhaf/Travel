@@ -1,11 +1,142 @@
 
+/* font-family: 'Aleo', serif;
+font-family: 'Red Hat Text', sans-serif; */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all .3s;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a,ul, li, h1, h2, p {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --header-color: #F2785C; 
+    --content-color: #0D606F;
+    --preview-color: #FFFFFF;
+    --transparent-color: #F2785CB2; 
+}
+
+.button {
+    background-color: var(--content-color);
+    font: 500 16px/21px 'Red Hat Text', sans-serif;
+    color: var(--preview-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* временные */
 .header {
     background-color: bisque;
 }
 .header__logo-mobile {
     display: none;
 }
+.footer {
+    background-color: bisque;
+}
 
 
-/* font-family: 'Aleo', serif;
-font-family: 'Red Hat Text', sans-serif; */
+
+/* HEADER */
+
+.header {
+    background-image: url(../assets/img/desktop/desk_preview_bg.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.header__transparent {
+    position: relative;
+    z-index: 10;
+    background: var(--transparent-color);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+.header__wrapper{
+    padding: 25px 0px; 
+}
+
+.header__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 40px;
+    padding-right: 40px;
+}
+ 
+
+.header__item-link {
+    font: 500 16px/21px 'Red Hat Text', sans-serif;
+    color: var(--preview-color);
+}
+
+.header__button {
+    padding: 10px 30px;
+}
+
+.header__burger {
+    display: none;
+}
+
+/* SECTION PREVIEW */
+
+
+.preview {
+    padding: 32px 20px 256px;
+    background-image: url(../assets/img/desktop/desk_preview_bg.png);
+    background-repeat: no-repeat;
+    background-position: center calc(-1 * 90px);
+}
+
+.preview__conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.preview__title {
+    max-width: 892px;
+    font: 700 80px 'Aleo', serif;
+    color: var(--preview-color); 
+}
+
+.preview__subtitle {
+    font: 700 20px/24px 'Aleo';
+    font-style: italic;
+    color: var(--preview-color); 
+}
+
+.preview__form {
+    max-width: 892px;
+    border-radius: 15px;
+    padding: 18px 18px 18px 40px;
+    background: rgba(255, 255, 255, 0.7);
+}
