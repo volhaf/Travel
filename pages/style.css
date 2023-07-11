@@ -112,7 +112,8 @@ a,ul, li, h1, h2, p {
 
 
 .preview {
-    padding: 32px 20px 256px;
+    /* padding: 32px 20px 256px; */
+    padding: 32px 20px 220px;
     background-image: url(../assets/img/desktop/desk_preview_bg.png);
     background-repeat: no-repeat;
     background-position: center calc(-1 * 90px);
@@ -170,3 +171,30 @@ a,ul, li, h1, h2, p {
 
 
 /* SECTION STEPS */
+
+.steps__title {
+    padding-top: 80px;
+    color: var(--header-color);
+    font: 500 40px 'Red Hat Text';
+    line-height: normal;
+    text-align: center;
+}
+
+.steps__conteiner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 40px;
+}
+.card__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card__text {
+    font: 400 20px/24px 'Aleo';
+    color: var(--content-color);
+}
+
+
+/* SECTION DESTINATIONS */
