@@ -44,6 +44,13 @@ a,ul, li, h1, h2, p {
     box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.title {
+    color: var(--header-color);
+    font: 500 40px 'Red Hat Text';
+    line-height: normal;
+    text-align: center;
+}
+
 
 
 
@@ -174,10 +181,10 @@ a,ul, li, h1, h2, p {
 
 .steps__title {
     padding-top: 80px;
-    color: var(--header-color);
+    /* color: var(--header-color);
     font: 500 40px 'Red Hat Text';
     line-height: normal;
-    text-align: center;
+    text-align: center; */
 }
 
 .steps__conteiner {
@@ -198,3 +205,54 @@ a,ul, li, h1, h2, p {
 
 
 /* SECTION DESTINATIONS */
+
+.destinations__title {
+    padding-top: 100px;
+}
+
+.destinations__conteiner {
+    padding-top: 45px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.destinations__banner {
+    display: flex;
+    flex-direction: row;
+    gap: 60px; 
+}
+
+.banner__content {
+    position: relative;
+}
+
+.banner__subtitle {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    font: 500 32px/42px 'Red Hat Text', sans-serif;
+    color: var(--preview-color);
+
+}
+
+.destinations__carousel {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+
+.destinations__button {
+    padding: 10px 32px;
+    font: 500 24px/32px 'Red Hat Text', sans-serif;
+}
