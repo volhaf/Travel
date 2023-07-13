@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
 }
 
-a,ul, li, h1, h2, p {
+a,ul, li, h1, h2, h3, p {
     text-decoration: none;
     list-style: none;
     padding: 0;
@@ -42,6 +42,16 @@ a,ul, li, h1, h2, p {
     border: none;
     border-radius: 10px;
     box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button__arrow {
+    padding: 10px 32px;
+    font: 500 24px/32px 'Red Hat Text', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    /* max-width: 230px; */
 }
 
 .title {
@@ -201,6 +211,7 @@ a,ul, li, h1, h2, p {
 .card__text {
     font: 400 20px/24px 'Aleo';
     color: var(--content-color);
+    padding-top: 30px;
 }
 
 
@@ -253,6 +264,70 @@ input[type="radio"]{
 
 
 .destinations__button {
-    padding: 10px 32px;
-    font: 500 24px/32px 'Red Hat Text', sans-serif;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+
+
+/* SECTION STORIES */ 
+
+.stories__title {
+    padding-top: 80px;
+}
+
+.stories__gallery-bg {
+    margin-top: 40px;
+    background-image: url(../assets/img/desktop/desk_stories_bg.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    /* padding-bottom: 40px; */
+}
+.stories__gallery-transporent {
+    background-color: var(--background-color);
+    padding-bottom: 40px;
+}
+
+.stories__gallery { 
+    padding-top: 40px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 40px;  */
+}
+
+.gallery__card {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 30px;
+
+}
+
+.gallery__img-deks {
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px 0px #0D606F;
+}
+
+.gallery__subtitle {
+    font: 400 35px/42px 'Aleo';
+    color: var(--content-color);
+    margin-bottom: 25px;
+}
+
+.gallery__text {
+    font: 400 20px/24px 'Aleo';
+    color: var(--content-color);
+}
+
+.gallery__link {
+    font: 400 20px/24px 'Aleo';
+    color: var(--content-color); 
+    font-weight: bold;
+}
+
+.stories__button {
+    margin: 0 auto;
+    margin-top: 10px;
+    /* margin-bottom: 40px; */
 }
