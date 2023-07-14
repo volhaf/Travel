@@ -1,7 +1,4 @@
 
-/* font-family: 'Aleo', serif;
-font-family: 'Red Hat Text', sans-serif; */
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -19,7 +16,7 @@ body {
     margin: 0 auto;
 }
 
-a,ul, li, h1, h2, p {
+a,ul, li, h1, h2, h3, p {
     text-decoration: none;
     list-style: none;
     padding: 0;
@@ -44,21 +41,21 @@ a,ul, li, h1, h2, p {
     box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-
-
-
-/* временные */
-.header {
-    background-color: bisque;
-}
-.header__logo-mobile {
-    display: none;
-}
-.footer {
-    background-color: bisque;
+.button__arrow {
+    padding: 10px 32px;
+    font: 500 24px/32px 'Red Hat Text', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
-
+.title {
+    color: var(--header-color);
+    font: 500 40px 'Red Hat Text';
+    line-height: normal;
+    text-align: center;
+}
 
 /* HEADER */
 
@@ -112,11 +109,10 @@ a,ul, li, h1, h2, p {
 
 
 .preview {
-    /* padding: 32px 20px 256px; */
     padding: 32px 20px 220px;
     background-image: url(../assets/img/desktop/desk_preview_bg.png);
     background-repeat: no-repeat;
-    background-position: center calc(-1 * 90px);
+    background-position: center -90px;
 }
 
 .preview__conteiner {
@@ -174,10 +170,6 @@ a,ul, li, h1, h2, p {
 
 .steps__title {
     padding-top: 80px;
-    color: var(--header-color);
-    font: 500 40px 'Red Hat Text';
-    line-height: normal;
-    text-align: center;
 }
 
 .steps__conteiner {
@@ -194,7 +186,147 @@ a,ul, li, h1, h2, p {
 .card__text {
     font: 400 20px/24px 'Aleo';
     color: var(--content-color);
+    padding-top: 30px;
 }
 
 
 /* SECTION DESTINATIONS */
+
+.destinations__title {
+    padding-top: 100px;
+}
+
+.destinations__conteiner {
+    padding-top: 45px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.destinations__banner {
+    display: flex;
+    flex-direction: row;
+    gap: 60px; 
+}
+
+.banner__content {
+    position: relative;
+}
+
+.banner__subtitle {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    font: 500 32px/42px 'Red Hat Text', sans-serif;
+    color: var(--preview-color);
+
+}
+
+.destinations__carousel {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.destinations__button {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+
+
+/* SECTION STORIES */ 
+
+.stories__title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.stories__gallery-bg {
+    background-image: url(../assets/img/desktop/desk_stories_bg.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.stories__gallery-transporent {
+    background-color: var(--background-color);
+}
+
+
+ .stories__gallery { 
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+
+.gallery__card {
+    display: flex;
+    gap: 40px;
+}
+
+.gallery__img-deks {
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px 0px #0D606F;
+}
+
+.gallery__subtitle {
+    font: 400 35px 'Aleo';
+    color: var(--content-color);
+    padding-bottom: 16px;
+}
+
+.gallery__text {
+    font: 400 20px 'Aleo';
+    color: var(--content-color);
+}
+
+.gallery__link {
+    font: 400 20px 'Aleo';
+    color: var(--content-color); 
+    font-weight: bold;
+}
+
+.stories__button {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-image: url(../assets/img/desktop/desk_stories_bg.png);
+    background-repeat: no-repeat;
+    background-position: center -1252px; 
+}
+
+.footer__conteiner {
+    padding: 21px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 330px; 
+}
+
+.footer__title {
+    font: 500 16px/21px 'Red Hat Text';
+    color: var(--preview-color);
+
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
