@@ -118,7 +118,7 @@ a,ul, li, h1, h2, h3, p {
 .preview__conteiner {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 55px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -239,9 +239,6 @@ input[type="radio"]{
     margin: 0 auto;
     margin-top: 40px;
 }
-
-
-
 
 /* SECTION STORIES */ 
 
