@@ -113,11 +113,14 @@ img {
     display: none;
 }
 
+.header__logo-mobile {
+    display: none;
+}
 /* SECTION PREVIEW */
 
 
 .preview {
-    padding: 32px 20px 220px;
+    padding: 30px 20px 258px;
     background-image: url(../assets/img/desktop/desk_preview_bg.png);
     background-repeat: no-repeat;
     background-position: center -90px;
@@ -126,7 +129,7 @@ img {
 .preview__conteiner {
     display: flex;
     flex-wrap: wrap;
-    gap: 55px;
+    gap: 40px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -135,6 +138,8 @@ img {
     max-width: 892px;
     font: 700 80px 'Aleo', serif;
     color: var(--preview-color); 
+    font-style: normal;
+    line-height: normal;
 }
 
 .preview__subtitle {
@@ -191,6 +196,15 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+.steps_card-1 {
+    margin-left: 6px;
+}
+.steps_card-2 {
+    margin-left: 77px;
+}
+.steps_card-3 {
+    margin-right: 10px;
+}
 .card__text {
     font: 400 20px/24px 'Aleo';
     color: var(--content-color);
@@ -221,10 +235,9 @@ img {
 
 }
 
-/* .banner__content {
+.banner__content {
     position: relative;
-    
-} */
+}
 
 .banner__subtitle {
     position: absolute;
@@ -240,16 +253,11 @@ img {
     object-fit: contain;
 }
 
-
-
-
-
-
 .destinations__carousel {
-    padding-top: 25px;
+    padding-top: 18px;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
 }
 
 input[type="radio"]{
@@ -331,12 +339,12 @@ input[type="radio"]{
 }
 
 .footer__conteiner {
-    padding: 21px 0;
+    padding: 13px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: right;
-    gap: 330px; 
+    gap: 286px; 
 }
 
 .footer__title {
