@@ -63,6 +63,15 @@ img {
     text-align: center;
 }
 
+/* .preview,
+.steps,
+.destinations,
+.stories,
+.footer {
+    display: none;
+} */
+
+
 /* HEADER */
 
 .header {
@@ -285,22 +294,20 @@ input[type="radio"]{
 }
 .stories__gallery-transporent {
     background-color: var(--background-color);
+    padding-bottom: 40px;
 }
 
-
- .stories__gallery { 
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
- }
-
 .gallery__card {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     gap: 40px;
+    padding-top: 30px;
 }
 
 .gallery__img-deks {
+    width: 100%;
+    height: auto;
     border-radius: 16px;
     object-fit: cover;
     box-shadow: 0px 4px 4px 0px #0D606F;
@@ -326,7 +333,6 @@ input[type="radio"]{
 .stories__button {
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 40px;
 }
 
 
@@ -357,4 +363,57 @@ input[type="radio"]{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+
+
+@media screen and (max-width: 1280px){
+    .gallery__card {
+        padding: 30px 30px 0px 30px;
+
+    }
+}
+
+
+@media screen and (max-width: 1090px){
+
+    .button {
+        font: 500 16px/18px 'Red Hat Text', sans-serif;
+    }
+    
+    .header__list {
+        gap: 10px;
+        padding-right: 10px;
+    }
+    .steps_card-2 {
+        margin-left: 0px;
+    }
+    .card__text {
+        font: 400 18px/24px 'Aleo';
+    }
+
+    .stories__gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery__card {
+        max-width: 50%;
+        gap: 40px;
+        display: block;
+        margin: 0px;
+    }
+    .gallery__img-deks {
+        width: 80%;
+        height: auto;
+    }
+    .gallery__text {
+        font: 400 16px 'Aleo';
+    }
+
+    .gallery__subtitle {
+        font: 400 28px 'Aleo';}
+
+    .stories__button-conteiner {
+        margin: 0px auto;
+    }
 }
