@@ -4,8 +4,10 @@
 }
 
 html {
+    max-width: 1440px;
     scroll-behavior: smooth;
     transition: all .3s;
+    margin: 0 auto;
 }
 body {
     margin: 0 auto;
@@ -22,6 +24,10 @@ a,ul, li, h1, h2, h3, p {
     padding: 0;
     margin: 0;
 
+}
+
+img {
+    max-width: 100%;
 }
 
 :root {
@@ -57,6 +63,15 @@ a,ul, li, h1, h2, h3, p {
     text-align: center;
 }
 
+/* .preview,
+.steps,
+.destinations,
+.stories,
+.footer {
+    display: none;
+} */
+
+
 /* HEADER */
 
 .header {
@@ -70,6 +85,8 @@ a,ul, li, h1, h2, h3, p {
     z-index: 10;
     background: var(--transparent-color);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .header__wrapper{
     padding: 25px 0px; 
@@ -105,11 +122,14 @@ a,ul, li, h1, h2, h3, p {
     display: none;
 }
 
+.header__logo-mobile {
+    display: none;
+}
 /* SECTION PREVIEW */
 
 
 .preview {
-    padding: 32px 20px 220px;
+    padding: 30px 20px 258px;
     background-image: url(../assets/img/desktop/desk_preview_bg.png);
     background-repeat: no-repeat;
     background-position: center -90px;
@@ -118,7 +138,7 @@ a,ul, li, h1, h2, h3, p {
 .preview__conteiner {
     display: flex;
     flex-wrap: wrap;
-    gap: 55px;
+    gap: 40px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -127,6 +147,8 @@ a,ul, li, h1, h2, h3, p {
     max-width: 892px;
     font: 700 80px 'Aleo', serif;
     color: var(--preview-color); 
+    font-style: normal;
+    line-height: normal;
 }
 
 .preview__subtitle {
@@ -183,6 +205,15 @@ a,ul, li, h1, h2, h3, p {
     margin-left: auto;
     margin-right: auto;
 }
+.steps_card-1 {
+    margin-left: 6px;
+}
+.steps_card-2 {
+    margin-left: 77px;
+}
+.steps_card-3 {
+    margin-right: 10px;
+}
 .card__text {
     font: 400 20px/24px 'Aleo';
     color: var(--content-color);
@@ -201,12 +232,16 @@ a,ul, li, h1, h2, h3, p {
     display: flex; 
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .destinations__banner {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    gap: 60px; 
+    justify-content: space-between;
+    width: 175%;
+
 }
 
 .banner__content {
@@ -222,11 +257,16 @@ a,ul, li, h1, h2, h3, p {
 
 }
 
+.banner__img-desk {
+    border-radius: 16px;
+    object-fit: contain;
+}
+
 .destinations__carousel {
-    padding-top: 25px;
+    padding-top: 18px;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
 }
 
 input[type="radio"]{
@@ -254,22 +294,20 @@ input[type="radio"]{
 }
 .stories__gallery-transporent {
     background-color: var(--background-color);
+    padding-bottom: 40px;
 }
 
-
- .stories__gallery { 
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
- }
-
 .gallery__card {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     gap: 40px;
+    padding-top: 30px;
 }
 
 .gallery__img-deks {
+    width: 100%;
+    height: auto;
     border-radius: 16px;
     object-fit: cover;
     box-shadow: 0px 4px 4px 0px #0D606F;
@@ -295,7 +333,6 @@ input[type="radio"]{
 .stories__button {
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 40px;
 }
 
 
@@ -308,12 +345,12 @@ input[type="radio"]{
 }
 
 .footer__conteiner {
-    padding: 21px 0;
+    padding: 13px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: right;
-    gap: 330px; 
+    gap: 286px; 
 }
 
 .footer__title {
@@ -326,4 +363,57 @@ input[type="radio"]{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+
+
+@media screen and (max-width: 1280px){
+    .gallery__card {
+        padding: 30px 30px 0px 30px;
+
+    }
+}
+
+
+@media screen and (max-width: 1090px){
+
+    .button {
+        font: 500 16px/18px 'Red Hat Text', sans-serif;
+    }
+    
+    .header__list {
+        gap: 10px;
+        padding-right: 10px;
+    }
+    .steps_card-2 {
+        margin-left: 0px;
+    }
+    .card__text {
+        font: 400 18px/24px 'Aleo';
+    }
+
+    .stories__gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery__card {
+        max-width: 50%;
+        gap: 40px;
+        display: block;
+        margin: 0px;
+    }
+    .gallery__img-deks {
+        width: 80%;
+        height: auto;
+    }
+    .gallery__text {
+        font: 400 16px 'Aleo';
+    }
+
+    .gallery__subtitle {
+        font: 400 28px 'Aleo';}
+
+    .stories__button-conteiner {
+        margin: 0px auto;
+    }
 }
